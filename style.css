@@ -1,0 +1,136 @@
+@charset "utf-8";
+ul,li{
+list-style:none;
+}
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding:0;
+  font-size: 62.5%;
+}
+html{
+  overflow: auto;
+}
+p,li.dt,dl{
+  line-height:1.6;
+}
+p{
+  margin:0 0 1em 0;
+}
+h1,h2,h3,h4{
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','TsukuARdGothic-Regular',sans-serif;
+}
+body{
+  overflow-x: hidden;
+  background: linear-gradient(to right, rgba(255, 248, 222, 0.78), rgba(109, 65, 255, 0.53));
+}
+
+/* 本文 */
+/* ヘッダー */
+header{
+  height:40px;
+  border-bottom:solid 0.3rem lightslategrey;
+}
+
+h1{
+  font-size :2.5rem;
+  color:#330033;
+  margin-left: 0.5rem;
+  float: left;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.3rem;
+ 
+}
+.icon{
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: aliceblue;
+  position: relative;
+  top: 1.3rem;
+}
+
+/* メイン */
+.top-wrapper{
+  float: left;
+}
+.himawari1,.azisai1{
+  height:auto;
+  width: 47%;
+  float: left;
+}
+.top-title{
+  float: left;
+  display: flex;
+}
+h2{
+  font-size:5rem;
+  writing-mode: vertical-rl;
+  margin: 3rem 0;
+}
+.container{
+  margin: 0 2rem;
+}
+.main-text{
+  display: flex;
+}
+h3{
+  font-size: 3rem;
+  border-left: thick solid brown;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+.picture{
+  width: 50%;
+  height: auto;
+}
+.picture-text{
+  display: table;
+}
+.picture-text p{
+  padding: 0 1rem;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* フッター */
+.footer-container{
+  margin-top: 2rem;
+  border-top: solid 0.2rem lightgray ;
+  display: flex;
+}
+#page_top{
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 0;
+  bottom:1rem;
+  background-color: #961818;;
+  opacity: 0.6;
+
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 3rem;
+  height:3rem;
+  text-decoration: none;
+}
+#page_top a::after{
+  content:'▲';
+  font-size: 1.4rem;
+  font-weight: bold;
+  color:#fff;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
